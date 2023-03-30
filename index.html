@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: yellow;
+        }
+
+        h1 {
+            font-size: 100px;
+        }
+
+        button {
+            height: 60px;
+        }
+
+        input {
+            width: 100%;
+            height: 50px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        @media screen and (max-width: 400px) {
+            body {
+                background-color: orangered;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            input {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>
+        My calculator
+    </h1>
+
+    <p>
+        <input type="number" name="number" id="number" placeholder="0.00">
+    </p>
+
+    <p class="buttons">
+        <button>0</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+    </p>
+
+    <p class="buttons">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+    </p>
+
+    <p class="buttons">
+        <button>8</button>
+        <button>9</button>
+        <button>.</button>
+        <button>=</button>
+    </p>
+
+</body>
+</html>
